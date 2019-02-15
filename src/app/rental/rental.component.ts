@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { RentalService} from './shared/rental.service'
 @Component({
   selector: 'app-rental',
   templateUrl: './rental.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RentalComponent implements OnInit {
 
-  constructor() { }
+  constructor(rental:RentalService) { }
 
   ngOnInit() {
   }

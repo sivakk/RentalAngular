@@ -9,6 +9,7 @@ import { RentalComponent } from './rental/rental.component';
 import { TempComponent } from './temp/temp.component';
 import { RentalListComponent } from './rental/rental-list/rental-list.component';
 import { RentalListItemComponent } from './rental/rental-list-item/rental-list-item.component';
+import { RentalService } from "./rental/shared/rental.service";
 
 const routes:Routes=[{path:'hello',component:RentalComponent}];
 @NgModule({
@@ -25,7 +26,7 @@ const routes:Routes=[{path:'hello',component:RentalComponent}];
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [RentalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
